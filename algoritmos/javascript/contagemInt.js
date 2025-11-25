@@ -2,9 +2,10 @@
 //Dado um conjunto de dados, retorne os valores inteiros entre o primeiro elemento, e o valor N.
 
 const pattern = [{
-        0: "\[\s*([0-9]+|\"[^\"]*\")(\s*,\s*([0-9]+|\"[^\"]*\"))*\s*\]",
-        1: "\\d+"
-    }];
+    0: "\\[\\s*(-?[0-9]+|\"[^\"]*\")(\\s*,\\s*(-?[0-9]+|\"[^\"]*\"))*\\s*\\]",
+    1: "-?\\d+"
+}];
+
 
 function contarValoresInteiros(dataset, N) {
     let limite;
